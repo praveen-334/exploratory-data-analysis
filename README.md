@@ -1,3 +1,9 @@
+
+![Orange Bright Colorful Modern Abstract Money Finance YouTube Thumbnail ](https://github.com/user-attachments/assets/344fe9c4-bde4-490a-b78b-6cb0b715f8eb)
+
+
+
+## Load the Necessary Libraries
 ```python
 import pandas as pd
 import numpy as np
@@ -5,12 +11,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ```
 
-
+## Load the Data
 ```python
 df = pd.read_csv(r'\Users\TOH TICKETING\Downloads\SampleSuperstore.csv')
 ```
 
-
+## Basic Data Inspection
 ```python
 df.head()
 ```
@@ -153,7 +159,7 @@ df.info()
     dtypes: float64(3), int64(2), object(8)
     memory usage: 1015.1+ KB
     
-
+## Data Cleaning
 
 ```python
 df.isnull().sum()
@@ -855,6 +861,8 @@ df.info()
 
 ## univarite analysis
 
+### Analyze individual variables to understand their distributions.
+
 ```python
 # Sales distribution
 plt.figure(figsize=(10, 6))
@@ -932,9 +940,9 @@ plt.show()
     
 
 
-## bivariate analysis
+## Bivariate analysis
 
-
+### Analyze the relationships between pairs of variables.
 ```python
 plt.figure(figsize=(10,5))
 sns.scatterplot(data=df,x='Sales',y='Profit')
@@ -980,10 +988,10 @@ plt.show()
 
 ![download](https://github.com/user-attachments/assets/f911e188-5dcf-4b08-97e1-7336a1fbc0b9)
 
+```
+## Multivariate analysis
 
-
-## multivariate analysis
-
+### Explore the relationships among multiple variables.
 
 ```python
 # Select only numeric columns
